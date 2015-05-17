@@ -1,0 +1,20 @@
+body{
+	margin:0;
+	font-family:'华文行楷';
+	font-size:16px;
+	color:#fff;
+}
+header{
+	height:10%;
+	text-align:center;
+	font-size:32px;
+	padding-top: 30px;
+	background-color:rgb(28,12,87);
+}
+header span{
+	
+}
+#content{
+	height:90%;
+	background-color:rgb(31,166,122);
+}
