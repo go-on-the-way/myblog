@@ -1,11 +1,14 @@
-body{
+*{
 	margin:0;
+	padding:0;
+}
+body{
 	font-family:'华文行楷';
 	font-size:16px;
 	color:#fff;
 }
 header{
-	height:10%;
+	height:8%;
 	text-align:center;
 	font-size:32px;
 	padding-top: 30px;
@@ -15,6 +18,66 @@ header span{
 	
 }
 #content{
-	height:90%;
+	height:87%;
 	background-color:rgb(31,166,122);
+}
+.photoalbum{
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left: -200px;
+    margin-top: -160px;
+	width:400px;
+	hright:400px;
+	display:table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.photoalbum img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+#photo{
+	border-radius: 10px;
+}
+#phototitle{
+	position: absolute;
+	margin: 10px auto;
+	left: 0;
+	right: 0;
+	width: 200px;
+	text-align:center;
+	font-size:2em;
+}
+.content-left{
+	float:left;
+	position:relative;
+	left:100px;
+	top:50px;
+}
+.content-left-poem{
+	float:left;
+	width:1.5em;
+	font-size:1.5em;
+	z-index:10;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	opacity:0.5;
+}
+.content-right{
+	float:right;
+	position:relative;
+	right:100px;
+	top:50px;
+	font-size:1.5em;
+	z-index:10;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	opacity:0.5;
+}
+#photoalbum{
+	
 }
