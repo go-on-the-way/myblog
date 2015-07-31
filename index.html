@@ -6,12 +6,38 @@
 	  <meta name="description" content="a way of a peple ">
 	  <meta name="viewport" content="width=device-width,initial-scale=1">
 	  <link rel="stylesheet" href="stylesheets/index.css"/>
+	  <style type="text/css">
+		body{
+          /*  firefox下禁止元素被选取
+          -moz-user-focus: ignore;  
+          -moz-user-input: disabled; 
+        */  
+          -moz-user-select: none;
+        }
+		span {
+			display:block;
+		}
+		span::before{
+			content:"欢";
+			font-size:20px;
+		}
+		span::after{
+			content:"园";
+			font-size:20px;
+		}
+		span::first-letter {
+			font-size:20px;
+		}
+		span::selection {
+			zoom:1;
+		}
+	  </style>
 	</head>
 	
 	<body>
 		<div id="container">
 			<header>
-				<span>欢迎驾到心园</span>
+				<span>迎驾到心</span>
 			</header>
 			<div id="content">
 				<div class="content-left">

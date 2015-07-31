@@ -10,4 +10,7 @@ window.onload = function(){
 	var photoElement =document.getElementById("photo");
 	photoElement.style.left = (photoParentWidth - 100)+"px";
 	var photos = [];
+	
+	document.onselectstart = function (e) { return false; }//禁止浏览器选取页面内容IE，google
+	document.oncontextmenu=function(e){return false;}//禁止鼠标右键
 };
