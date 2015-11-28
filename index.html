@@ -47,26 +47,28 @@
 			<!--------------Header--------------->
 			<header> 
 				<div id="logo"><a href=""><img src="./images/logo.png"/></a></div>
-			  <nav>
+			    <nav>
 					<ul class="menu">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="column2.html">Column 2</a></li>
-						<li><a href="column3.html">Column 3</a></li>
+						<li><a href="index.html">主页</a></li>
+						<li><a href="blog.html" target="blog-content">博客</a></li>
 					</ul>
-					<div class="minimenu"><div>MENU</div>
-						<select>
-							<option>Home</option>
-							<option>Blog</option>
-							<option>Gallery</option>
-							<option>Contact</option>
-							<option>About</option>
-						</select>
-					</div>
 				</nav>
 			</header>
-			
+			<!--
+			<div class="feature">	
+				<div class="rslides_container">
+					<ul class="rslides" id="slider">
+						<li><img src="images/1.jpg"/></li>
+					</ul>
+				</div>
+			</div>
+			-->
+			<article class="blog_content_container">
+				<iframe name="blog-content" scrolling="no" src="blog.html" ></iframe>
+			</article>
 		</div>
-		
+		<div id="copyright">
+			<p>Copyright &copy; 2015-<a target="_blank" href="index.html">Black个人博客</a></p>
+		</div>
 	</body>
 </html>

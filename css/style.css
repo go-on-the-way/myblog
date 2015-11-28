@@ -27,7 +27,7 @@ input.button {	margin: 0;	border: 0;	height: 24px;	padding: 0px 12px 0px 12px;}
 a.button:hover, input.button:hover {background: #006699;color:#ffffff;}
 
 /*-------------container */
-.container{width:960px; background-color:#1E1E1E; margin:0 auto;border-right:5px solid #252525;border-left:5px solid #252525;}
+.container{width:960px;height:1200px; background-color:#1E1E1E; margin:0 auto;border-right:5px solid #252525;border-left:5px solid #252525;border-bottom:5px solid #252525;}
 /*-------------header */
 header {position:relative;height: 150px; background-color:#141414; border-bottom:5px solid #252525;}
 
@@ -48,29 +48,10 @@ header nav ul li a {font-size: 13px; line-height:14px;color: #686868;display: bl
 header nav ul li:hover a{color:#ffffff;}
 
 /*-------------content */
-#content {}
-
-.block {background:#ffffff; border-bottom: 5px solid #252525;}
-.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
-.main-content{ padding:0 10px;}
-.main-content article{overflow:hidden; margin:10px;}
-.main-content .heading h2{ font-size:18px; line-height:25px; font-weight:normal; font-family: Georgia, Serif; margin:10px 0;}
-.main-content .heading img{float:left; margin:3px 30px 0px 0; border:#000000 5px solid;}
-.main-content .content{}
-.main-content .footer{}
-.main-content .footer .more{float:left;}
-.main-content .footer .more a{ text-decoration:none; font-style:italic;}
-
-.main-content .post{}
-.main-content .post .heading h2{font-size: 22px;}
-.main-content .post p{margin:10px 0;}
-
-.sidebar {background:#F5F5F5;}
-.sidebar section{}
-.sidebar .heading{color:#747472; background:#EEEEEE; font-size:14px; font-weight:normal; padding: 10px; border:1px solid #E0E0E0;font-family: Georgia, Serif;}
-.sidebar .content img{float:left; margin:5px; border:#000000 5px solid;}
-.sidebar .content{padding:15px; background-color:#F5F5F5; border:1px solid #E0E0E0;}
-.sidebar .content h4{font-family: Georgia, Serif; font-weight:normal; font-style:italic;}
+.content {
+	color:#ffffff;
+	padding-left:10px;
+}
 
 .feature{margin: 20px; border:5px solid #000000;}
 
@@ -79,15 +60,13 @@ ul.list li {padding:0px 0 5px 12px; line-height:25px; background:url(../images/m
 ul.list li a { font-size:14px; color:#292929; line-height:25px;}
 ul.list li a:hover {color:#006699; text-decoration:none;}
 
-/*------------footer */ 
-footer {padding: 20px 10px;}
-footer .heading{ color:#ffffff; padding-bottom:5px;font-size:20px; font-weight:normal; text-transform:uppercase;}
-footer .content{color:#ffffff;}
-footer .content img{float:left; margin:5px; border:#ffffff 5px solid;}
-footer ul {margin:0; padding:0;list-style-image:none;}
-footer ul li { list-style:circle;margin-left:20px;}
-footer ul li a { font-size:14px; color:#ffffff;}
-footer ul li a:hover {color:#006699; text-decoration:none; cursor:pointer;}
-
+/*博客内容*/
+.blog_content_container {
+	height:90%;
+}
+.blog_content_container iframe{
+	width:100%;
+	height:100%;
+}
 /*-------------copyright*/
-#copyright{display:inline-block; width:100%; text-align: center; background:#141414;padding:8px 0px;color:#ffffff;border-top: 5px solid #252525;}
+#copyright{position:fixed;bottom:0px;display:inline-block; width:100%; text-align: center; background:#141414;padding:8px 0px;color:#ffffff;border-top: 5px solid #252525;}
