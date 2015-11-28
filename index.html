@@ -1,110 +1,72 @@
 <!DOCTYPE HTML>
-<html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 	<head>
 	  <meta charset="UTF-8">
-	  <title>Myblog</title>
-	  <meta name="description" content="a way of a peple ">
+	  <title>Black个人博客，web前端学习</title>
+	  <meta name="keywords" content="web前端">
+	  <meta name="description" content="web前端学习，html/css/js,seo,nodejs">
 	  <meta name="viewport" content="width=device-width,initial-scale=1">
-	  <link rel="stylesheet" href="stylesheets/index.css"/>
-	  <style type="text/css">
-		body{
-          /*  firefox下禁止元素被选取
-          -moz-user-focus: ignore;  
-          -moz-user-input: disabled; 
-        */  
-          -moz-user-select: none;
-        }
-		span {
-			display:block;
-		}
-		span::before{
-			content:"欢";
-			font-size:20px;
-		}
-		span::after{
-			content:"园";
-			font-size:20px;
-		}
-		span::first-letter {
-			font-size:20px;
-		}
-		span::selection {
-			zoom:1;
-		}
-	  </style>
+	  <link rel="stylesheet" href="css/zerogrid.css">
+	  <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+	  <link rel="stylesheet" href="css/responsiveslides.css" />
+	  <!--[if lt IE 8]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+           <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+              <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+           </a>
+        </div>
+      <![endif]-->
+      <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	  <![endif]-->
+	  <link href='./images/favicon.ico' rel='icon' type='image/x-icon'/>
+	
+	  <script src="js/jquery.min.js"></script>
+	  <script src="js/responsiveslides.js"></script>
+	  <script>
+        $(function () {
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 500,
+			maxwidth: 960,
+			namespace: "centered-btns"
+		  });
+		});
+    </script>
 	</head>
 	
 	<body>
-		<div id="container">
-			<header>
-				<span>迎驾到心</span>
-			</header>
-			<div id="content">
-				<div class="content-left">
-					<div class="content-left-poem">
-						一生百年凡尘苦 ，
-					</div>
-					<div class="content-left-poem">
-						风华燃尽指间输 。
-					</div>
-					<div class="content-left-poem">
-						人间岁月尽虚度 ，
-					</div>
-					<div class="content-left-poem">
-						崎岖坎坷走迷途 。
-					</div>
-					<div class="content-left-poem">
-						梅傲寒霜香如顾 ，
-					</div>
-					<div class="content-left-poem">
-						旭日依旧东方出 。
-					</div>
-					<div class="content-left-poem">
-						回首前世无为路 ，
-					</div>
-					<div class="content-left-poem">
-						心力衰竭神形枯 。
-					</div>
-					<div>
-						<ul>
-							<li>
-								<a href="http://w3help.org/zh-cn/kb/">兼容性知识库(web标准推广)</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<p>
-					<ul>
-						<li>
-							&lt;option标签本身没有事件&gt;
-						</li>
+		<div class="container">
+			<!--------------Header--------------->
+			<header> 
+				<div id="logo"><a href=""><img src="./images/logo.png"/></a></div>
+			  <nav>
+					<ul class="menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="column2.html">Column 2</a></li>
+						<li><a href="column3.html">Column 3</a></li>
 					</ul>
-				</P>
-				<div class="content-center">
-					<!--<div id="phototitle">相片浏览</div>-->
-					<div id="photoalbum" class="photoalbum">
-						<img id="photo" src="images/photos/page1.jpg" alt="照片" />
+					<div class="minimenu"><div>MENU</div>
+						<select>
+							<option>Home</option>
+							<option>Blog</option>
+							<option>Gallery</option>
+							<option>Contact</option>
+							<option>About</option>
+						</select>
 					</div>
-				</div>
-				<div class="content-right">
-				    <!--《旅程》-->
-				　　意志倒下的时候<br>
-				　　生命也就不再屹立<br>
-				　　歪歪斜斜的身影<br>
-				　　又怎能耐住<br>
-				　　秋叶萧瑟，晚来风急<br>
-				　　垂下头颅<br>
-				　　只是为了思想扬起<br>
-				　　你若有一个不屈的灵魂<br>
-				　　脚下就会有一片坚实的土地<br>
-				　　无论走向何方<br>
-				　　都会有无数双眼睛跟随你<br>
-				　　从别人那里<br>
-				　　我们认识了自己<br>
-				　　<br>
-				</div>
-			</div>
+				</nav>
+			</header>
+			
 		</div>
-		<script type="text/javascript" src="javascripts/index.js"></script>
+		
 	</body>
 </html>
